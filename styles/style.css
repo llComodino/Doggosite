@@ -26,7 +26,6 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    
 }
 
 nav{
@@ -121,7 +120,7 @@ hr{
 }
 
 .boxsection{
-    margin: 10px auto;
+    margin: 10px;
     padding: 0 10%;
     padding-bottom: 10px;
     text-transform: capitalize;
@@ -131,7 +130,7 @@ hr{
     padding-top: 30px;
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(4, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
 }
 
 .services-boxes{
@@ -150,6 +149,11 @@ hr{
 .box-title{
     color: #ff000063;
     padding: 10px 0;
+}
+
+.btn-box{
+    position: static;
+    padding-bottom: 10px;
 }
 
 .button{
