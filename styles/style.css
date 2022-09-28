@@ -21,6 +21,11 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     transition: .2s linear;
+    color: #fff;
+}
+
+body{
+    background-color: #1c1d23;
 }
 
 .header{
@@ -91,26 +96,40 @@ hr{
     display: inline-block;
 }
 
-.description{
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.content-services p{
-    /* ongoing */
-    font-family: sans-serif-lv; /* delete */
-}
-
-.content-contacts p{
-    /* ongoing */
-    font-family: sans-serif-lv; /* delete */
-}
-
 .content-about{
     min-height: 100vh;
     font-family: sans-serif-lv;
     font-size: 25px;
+}
+
+.content-about img{
+    max-height: 250px;
+    padding: 20px;
+    border-radius: 90px;
+}
+
+.shakka,
+.rivo,
+.comodino{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shakka,
+.rivo,
+.comodino p{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding: 30px;
+}
+
+.content-about h1{
+    padding-top: 20px;
+}
+
+.divider{
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .content-services{
@@ -130,15 +149,15 @@ hr{
     padding-top: 30px;
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(295px, 1fr));
 }
 
 .services-boxes{
     height: 375px;
     padding: 20px;
     text-align: center;
-    border-radius: 35px;
-    background: #1b213874;
+    border-radius: 30px;
+    background: #6fdcef94;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -147,7 +166,7 @@ hr{
 }
 
 .box-title{
-    color: #ff000063;
+    color: #ff0000a3;
     padding: 10px 0;
 }
 
@@ -163,10 +182,11 @@ hr{
     font-size: 20px;
     margin-top: 20px;
     padding: 8px 10px;
-    background: #ff000063;
+    background: #ff000093;
     border-radius: 5px;
     display: inline-block;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 .button:hover{
@@ -188,6 +208,12 @@ hr{
     min-height: 100vh;
     font-family: sans-serif-lv;
     font-size: 25px;
+}
+
+.description{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 h1{
