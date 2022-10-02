@@ -100,6 +100,7 @@ hr{
     min-height: 100vh;
     font-family: sans-serif-lv;
     font-size: 25px;
+    padding-bottom: 30px;
 }
 
 .content-about img{
@@ -115,12 +116,17 @@ hr{
     justify-content: space-between;
 }
 
-.shakka,
-.rivo,
-.comodino p{
-    padding-top: 30px;
-    padding-left: 20px;
-    padding: 30px;
+.shakka-img,
+.rivo-img,
+.comodino-img figcaption{
+    text-align: center;
+}
+
+.about-txt{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .content-about h1{
@@ -128,8 +134,8 @@ hr{
 }
 
 .divider{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .content-services{
