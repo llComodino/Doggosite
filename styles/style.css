@@ -120,8 +120,6 @@ hr{
     font-family: sans-serif-lv;
     font-size: 25px;
     padding-bottom: 30px;
-    margin-left: 85px;
-    margin-right: 85px;
 }
 
 .content-about img{
@@ -142,6 +140,8 @@ hr{
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .shakka-img,
@@ -241,32 +241,63 @@ hr{
 .content-contacts{
     min-height: 100vh;
     font-family: sans-serif-lv;
+    align-items: center;
+    align-content: center;
 }
 
-.contact-card-wrapper{
+h1{
+    text-align: center;
+    font-size: 65px;
+    font-family: sans-serif-lv;
+    font-weight: lighter;
+    padding-top: 50px;
+}
+
+.contact-card-wrap{
     display: flex;
     align-items: center;
     align-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .contact-card{
-    width: 32rem;
+    width: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
     border-radius: 30px;
 }
 
-.contact-card .card-img{
+.contact-card .card-img-shakka{
     width: 100%;
     height: 26rem;
     object-fit: fill;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.contact-card .card-img-lrivo{
+    width: 100%;
+    height: 26rem;
+    object-fit: fill;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.contact-card .card-img-comodino{
+    width: 100%;
+    height: 26rem;
+    object-fit: fill;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0%, 100% 78% );
+    clip-path: polygon(0 0, 100% 0%, 100% 0%, 100% 78% );
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
@@ -303,20 +334,6 @@ hr{
 .contact-card .button{
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.description{
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-h1{
-    text-align: center;
-    font-size: 65px;
-    font-family: sans-serif-lv;
-    font-weight: lighter;
-    padding-top: 50px;
 }
 
 footer{
