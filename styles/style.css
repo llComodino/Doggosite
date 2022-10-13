@@ -120,50 +120,98 @@ hr{
     font-family: sans-serif-lv;
     font-size: 25px;
     padding-bottom: 30px;
-}
-
-.content-about img{
-    max-height: 250px;
-    padding: 20px;
-    border-radius: 90px;
-}
-
-.content-about p{
-    font-family: poplight;
-    font-weight: -900;
-    font-size: 19px;
-}
-
-.shakka,
-.rivo,
-.comodino{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.shakka-img,
-.rivo-img,
-.comodino-img figcaption{
-    text-align: center;
-}
-
-.about-txt{
-    padding-top: 40px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    align-items: center;
+    align-content: center;
 }
 
 .content-about h1{
     padding-top: 20px;
 }
 
-.divider{
-    margin-left: 20%;
-    margin-right: 20%;
+.contact-card-wrap{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.contact-card{
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.contact-card .card-img-shakka{
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.contact-card .card-img-lrivo{
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.contact-card .card-img-comodino{
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.contact-card .profile-img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -11rem;
+    z-index: 999;
+    border: 3px solid #ac0af2ce;
+}
+
+.contact-card h1{
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.role{
+    color:rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.contact-card .card-description{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 55px;
+    margin-right: 55px;
+    text-align: justify;
+}
+
+.contact-card .button{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .content-services{
@@ -241,8 +289,6 @@ hr{
 .content-contacts{
     min-height: 100vh;
     font-family: sans-serif-lv;
-    align-items: center;
-    align-content: center;
 }
 
 h1{
@@ -251,89 +297,6 @@ h1{
     font-family: sans-serif-lv;
     font-weight: lighter;
     padding-top: 50px;
-}
-
-.contact-card-wrap{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-}
-
-.contact-card{
-    width: 30rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-}
-
-.contact-card .card-img-shakka{
-    width: 100%;
-    height: 26rem;
-    object-fit: fill;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-
-.contact-card .card-img-lrivo{
-    width: 100%;
-    height: 26rem;
-    object-fit: fill;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-
-.contact-card .card-img-comodino{
-    width: 100%;
-    height: 26rem;
-    object-fit: fill;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0%, 100% 78% );
-    clip-path: polygon(0 0, 100% 0%, 100% 0%, 100% 78% );
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-
-.contact-card .profile-img{
-    width: 15rem;
-    height: 15rem;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: -11rem;
-    z-index: 999;
-    border: 3px solid #ac0af2ce;
-}
-
-.contact-card h1{
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
-}
-
-.role{
-    color:rgba(0, 0, 0, 0.3);
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-.contact-card .card-description{
-    margin-top: 20px;
-    font-size: 20px;
-    margin-left: 55px;
-    margin-right: 55px;
-    text-align: justify;
-}
-
-.contact-card .button{
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 footer{
