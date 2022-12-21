@@ -60,7 +60,6 @@ nav{
     font-family: bauhaus;
 }
 
-
 .nav-links{
     flex: 1;
     text-align: right;
@@ -119,23 +118,25 @@ hr{
     min-height: 100vh;
     font-family: sans-serif-lv;
     font-size: 25px;
-    padding-bottom: 30px;
-    align-items: center;
-    align-content: center;
 }
 
 .content-about h1{
     padding-top: 20px;
+    margin-bottom: 10px;
 }
 
 .contact-card-wrap{
     display: flex;
     align-items: center;
     align-content: center;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row;                /* Important ! */
+    justify-content: space-around;      /* Important ! */
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.content-about hr{
+    margin-top: 100px;
 }
 
 .contact-card{
@@ -144,8 +145,6 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
     box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
     border-radius: 30px;
 }
